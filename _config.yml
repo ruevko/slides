@@ -20,7 +20,8 @@ highlighter: none
 
 exclude:
   - .jekyll-cache
-  
+  - Gemfile* #
+
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
@@ -30,9 +31,9 @@ sass:
   style:            :compressed
 
 plugins:
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap  
+  # - jekyll-paginate
+  # - jekyll-seo-tag
+  # - jekyll-sitemap
 
 collections:
   pages:
@@ -41,7 +42,7 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
-  
+
 defaults:
   -
     scope:
