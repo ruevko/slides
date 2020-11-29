@@ -11,16 +11,18 @@
         {% else %}
           {{ page.title | escape }}
         {% endif %}
-        -
+      &middot;
       {% endif %}
       {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
-        Page {{ paginator.page }} of {{ paginator.total_pages }} -
+      Page {{ paginator.page }} of {{ paginator.total_pages }} &middot;
       {% endif %}
       {{ site.title | escape }}
+      {% comment %}
       {% unless page.tag or page.title %}
-        - {{ site.description | escape }}
+      &middot; {{ site.description | escape }}
       {% endunless %}
-    </title>
+      {% endcomment %}
+  </title>
   <!-- unused >
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
@@ -33,5 +35,4 @@
     {% endcapture %}
     {{ include_to_scssify | scssify }}
   </style>
-
 </head>
