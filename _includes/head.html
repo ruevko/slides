@@ -11,15 +11,15 @@
         {% else %}
           {{ page.title | escape }}
         {% endif %}
-      &middot;
+      &bull;
       {% endif %}
       {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
-      Page {{ paginator.page }} of {{ paginator.total_pages }} &middot;
+      Page {{ paginator.page }} of {{ paginator.total_pages }} &bull;
       {% endif %}
       {{ site.title | escape }}
       {% comment %}
       {% unless page.tag or page.title %}
-      &middot; {{ site.description | escape }}
+      &bull; {{ site.description | escape }}
       {% endunless %}
       {% endcomment %}
   </title>
@@ -35,4 +35,6 @@
     {% endcapture %}
     {{ include_to_scssify | scssify }}
   </style>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
 </head>
