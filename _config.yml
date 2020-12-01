@@ -20,7 +20,8 @@ highlighter: none
 
 exclude:
   - .jekyll-cache
-  - Gemfile* #
+  - Gemfile*    #
+  - LICENSE.md  #
 
 compress_html:
   clippings: all
@@ -36,9 +37,9 @@ plugins:
   # - jekyll-sitemap
 
 collections:
-  pages:
-    output: true
-    permalink: /:name
+  # pages:
+    # output: true
+    # permalink: /:name
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
@@ -49,12 +50,12 @@ defaults:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "pages"
+  #   values:
+  #     layout: "page"
   -
     scope:
       path: ""
