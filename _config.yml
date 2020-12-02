@@ -31,15 +31,10 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
-plugins:
-  # - jekyll-paginate
-  # - jekyll-seo-tag
-  # - jekyll-sitemap
-
 collections:
-  # pages:
-    # output: true
-    # permalink: /:name
+  tags:
+    output: true
+    permalink: /tag/:name
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
@@ -48,14 +43,9 @@ defaults:
   -
     scope:
       path: ""
+      type: "tags"
     values:
-      layout: "default"
-  # -
-  #   scope:
-  #     path: ""
-  #     type: "pages"
-  #   values:
-  #     layout: "page"
+      layout: "tag"
   -
     scope:
       path: ""

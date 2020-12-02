@@ -73,9 +73,11 @@ img {
 }
 
 hr {
-	background: #000;
-    height: 1px;
-    border: 0;
+	/* background: #000; */
+   /* height: 1px; */
+   /* border: 0; */
+   margin: 2rem 0; /* fix hr */
+   border-bottom: 3px solid #bcc0c4; /* fix hr */
 }
 
 header {
@@ -133,7 +135,7 @@ strong, b {
 }
 
 .photo picture, .project picture {
-	margin-bottom: 0.5rem;
+	margin-bottom: .5rem;
 }
 
 .posts ul,header ul {
@@ -195,7 +197,7 @@ nav { /* ul */
 }
 
 .photos ul {
-	margin-top: 0.5rem;
+	margin-top: .5rem;
 }
 
 }
@@ -214,6 +216,10 @@ figcaption {
 }
 
 /* custom CSS */
+
+.post li {
+   margin-bottom: .5em; /* fix li */
+}
 
 .credit {
    display: none;

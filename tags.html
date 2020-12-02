@@ -1,0 +1,21 @@
+---
+layout: page
+title: Tags
+permalink: tags.html
+---
+
+<ul>
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+  {% assign ntag = 0 %}
+  {% for post in site.posts %}
+    {% if post.tags contains tag.name %}
+      {% assign ntag = ntag | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  <li>
+    <a href="{{site.baseurl}}/tag/{{tag.name}}">#{{tag.name}}</a>
+    ( {{ ntag }} slides )
+  </li>
+{% endfor %}
+</ul>

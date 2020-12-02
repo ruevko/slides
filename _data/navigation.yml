@@ -5,5 +5,7 @@ links:
   url: /about.html
 - title: Search
   url: /search.html
+- title: Tags
+  url: /tags.html
 # - title: Rss
 #   url: /atom.xml
