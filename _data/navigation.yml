@@ -1,11 +1,15 @@
 links:
-- title: Writing
+- title: Ruevko's Slides
   url: /
-- title: About
+  icon: fa-desktop
+- title: What's this Site
   url: /about.html
-- title: Search
+  icon: fa-question
+- title: Title Search
   url: /search.html
-- title: Tags
+  icon: fa-search
+- title: Tag List
   url: /tags.html
+  icon: fa-hashtag
 # - title: Rss
 #   url: /atom.xml

@@ -178,8 +178,9 @@ main {
 @media screen and (max-width: 45rem ) {
 
 header li {
-    display: inline;
-	margin-right: 1rem;
+   display: inline;
+	/* margin-right: 1rem; */
+	margin-right: 1.5rem;
 }
 
 .logo {
@@ -216,6 +217,12 @@ figcaption {
 }
 
 /* custom CSS */
+
+nav ul li i {
+   margin-left: 8px;
+   text-align: center;
+   width: 18px;
+}
 
 .post li {
    margin-bottom: .5em; /* fix li */
