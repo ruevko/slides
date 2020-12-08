@@ -4,6 +4,9 @@ layout: default
 
 <section class="post">
   <h1>{{ page.title }}</h1>
+  {% if page.slide-inc %}
+    {% include slide.html %}
+  {% endif %}
   {{ content }}
   <span class="meta">
     <time datetime="{{ page.date | date_to_xmlschema }}">

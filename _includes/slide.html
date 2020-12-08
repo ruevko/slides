@@ -1,0 +1,13 @@
+{% capture slide-ref %}
+  {% if page.slide-ref %}
+    {{ page.slide-ref }}
+  {% else %}
+    {{ page.slug }}{{ page.slide-ext }}
+  {% endif %}
+{% endcapture %}
+<a href="{{ slide-ref }}" style="margin-left: auto;">
+  <i class="fas fa-lg fa-external-link-alt"></i>
+</a>
+<div class="slide-div">
+  <iframe src="{{ slide-ref }}"></iframe>
+</div>

@@ -39,7 +39,8 @@ pre {
 }
 
 .post h1, .post h2, .post h3, .post h4 {
-	margin: 1rem 0;
+	/* margin: 1rem 0; */
+	margin: .5rem 0; /* open slide */
 }
 
 .post h2:first-child, .project h2:first-child, .photo h2:first-child {
@@ -177,20 +178,24 @@ main {
 
 @media screen and (max-width: 45rem ) {
 
-header li {
+nav li:nth-of-type(n+2) span {
+   display: none;
+}
+
+nav li {
    display: inline;
 	/* margin-right: 1rem; */
 	margin-right: 1.5rem;
 }
-
+/*
 .logo {
 	padding-bottom: 1rem;
 }
 
 header ul {
-	/* border-bottom: 1px solid #edf2f7; */
+	border-bottom: 1px solid #edf2f7;
 }
-
+*/
 nav { /* ul */
    border-right: 0px;
    border-bottom: 3px solid #bcc0c4; /* fix header */
@@ -218,7 +223,38 @@ figcaption {
 
 /* custom CSS */
 
-nav ul li i {
+.slide-div {
+   /* background-color: #ddd; */
+   border: 3px solid #bcc0c4;
+   margin-bottom: .5rem;
+   overflow: hidden;
+   padding-top: 50%;
+   position: relative;
+   width: 100%;
+}
+
+.slide-div iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: 3%;
+   height: 88%;
+   width: 94%;
+}
+/* TO DO
+.slide-fix {
+   -ms-zoom: 0.75;
+   -moz-transform: scale(0.75);
+   -moz-transform-origin: 0 0;
+   -o-transform: scale(0.75);
+   -o-transform-origin: 0 0;
+   -webkit-transform: scale(0.5);
+   -webkit-transform-origin: 1 1;
+}
+*/
+nav li i {
    margin-left: 8px;
    text-align: center;
    width: 18px;
@@ -228,7 +264,7 @@ nav ul li i {
    margin-bottom: .5em; /* fix li */
 }
 
-.credit {
+div.credit {
    display: none;
    font-size: 1rem;
    line-height: 2rem;
@@ -237,13 +273,13 @@ nav ul li i {
 }
 
 @media (max-width: 720px) {
-.foot-credit {
+body>div.credit {
    display: block; /* show credit */
 }
 }
 
 @media (min-width: 721px) {
-.head-credit {
+nav>div.credit {
    display: block; /* show credit */
    margin: 1rem 2rem 0 0;
    text-align: right;

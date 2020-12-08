@@ -12,7 +12,6 @@ author:
   avatar:
   email: #youremail
   url: #yoururl
-permalink: pretty
 
 baseurl: ""
 
@@ -37,7 +36,10 @@ collections:
     permalink: /tag/:name
   posts:
     output: true
-    permalink: /:year/:month/:day/:slug
+    permalink: /:year/:slug-post
+  slides:
+    output: true
+    permalink: /:path
 
 defaults:
   -
@@ -52,3 +54,5 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      slide-ext: ""
+      slide-inc: true
