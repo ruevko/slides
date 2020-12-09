@@ -3,11 +3,11 @@ layout: default
 ---
 
 <section class="posts">
-  <h1>#{{page.name}}</h1>
+  <h1>#{{page.tag-name}}</h1>
   {{ content }}
   <ul>
     {% for post in site.posts %}
-    {% if post.tags contains page.name %}
+    {% if post.tags contains page.tag-name %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       <time datetime="{{ post.date | date_to_xmlschema }}">

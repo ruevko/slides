@@ -9,12 +9,12 @@ permalink: tags.html
 {% for tag in tags %}
   {% assign ntag = 0 %}
   {% for post in site.posts %}
-    {% if post.tags contains tag.name %}
+    {% if post.tags contains tag.tag-name %}
       {% assign ntag = ntag | plus: 1 %}
     {% endif %}
   {% endfor %}
   <li>
-    <a href="{{site.baseurl}}/tag/{{tag.name}}">#{{tag.name}}</a>
+    <a href="{{site.baseurl}}/tag/{{tag.tag-name}}">#{{tag.tag-name}}</a>
     ( {{ ntag }} slides )
   </li>
 {% endfor %}

@@ -1,13 +1,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="description" content="
+  {% if page.description %}
+    {{ page.description }}
+  {% else %}
+    {{ site.description }}
+  {% endif %}">
   {% comment %}
   {% seo title=false %}
   {% endcomment %}
   <title>
-      {% if page.tag or page.title %}
-        {% if page.tag %}
-          {{ page.tag | escape }}
+      {% if page.tag-name or page.title %}
+        {% if page.tag-name %}
+          {{ page.tag-name | escape | prepend: "#" }}
         {% else %}
           {{ page.title | escape }}
         {% endif %}
