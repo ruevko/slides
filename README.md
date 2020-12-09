@@ -4,22 +4,18 @@ title: About
 permalink: about.html
 ---
 
-Sidey is a simple and minimalistic jekyll blogging theme.
+### ¿What's this site?
 
-### Features
+This is an archive for talks / slides / resources that I, [Rafael Castro](/),
+have made. Odds are you arrived here from another web page but,
+since you're already here, take a look at the things available.
 
-- Responsive design
-- Inline CSS
-- Anchor headings
-- Search
-- Tags & tag pages
-- Security headers (for Netlify hosting)
-- 404 page
-- Compressed CSS and HTML
-- 100/100 score on Lighthouse, Page Speed Insights & Webpagetest
-- Robots.txt
-- Atom & Json feeds
-- Sass
-- Seo optimized (Twitter cards, Facebook Open Graph, Schema.org)
-- Ultra fast (Only ~5kb of CSS)
-- Sidebar navigation
+The website was created with Sidey, a Jekyll blogging theme made by
+[Ronalds Vilciņš](https://github.com/ronv). Sidey has a MIT License;
+everything else is under Creative Commons Attribution Share Alike.
+
+### ¿Qué es este sitio?
+
+Esto es un archivo de charlas / diapositivas / recursos que yo,
+[Rafael Castro](/), he elaborado. Probablemente llegaste desde
+otra página web pero, ya que estás aquí, puedes hojear lo que hay.
