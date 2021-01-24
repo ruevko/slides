@@ -6,20 +6,18 @@ author:
 
 baseurl: /slides
 
-highlighter: none
-
 exclude:
   - .jekyll-cache
-  - Gemfile*    #
-  - LICENSE.md  #
+  - Gemfile*
+  - LICENSE.md
 
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
 
 sass:
-  sass_dir:          _sass
-  style:            :compressed
+  sass_dir: _sass
+  style: :compressed
 
 collections:
   tags:
