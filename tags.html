@@ -14,7 +14,8 @@ permalink: tags.html
     {% endif %}
   {% endfor %}
   <li>
-    <a href="{{site.baseurl}}/tag/{{tag.tag-name}}">#{{tag.tag-name}}</a>
+    <a href="{{ site.baseurl }}/tag/{{ tag.tag-name | slugify: 'latin' }}">
+      #{{ tag.tag-name }}</a>
     ( {{ ntag }} slides )
   </li>
 {% endfor %}
